@@ -6,22 +6,20 @@ function fibs(n) {
 	// y is representing the second term, and
 	// z is representing the sum of x and y.
 
-	let x = 0;
-	let y = 1;
-	let z;
+	let a = 0;
+	let b = 1;
+	let c;
 
 	const arr = [];
-
-	n > 0 ? arr.push(x) : '';
-	n > 1 ? arr.push(y) : '';
-
+	n > 0 ? arr.push(a) : false;
+	n > 1 ? arr.push(b) : false;
 	for (let i = 2; i < n; i++) {
-		z = x + y;
-		x = y;
-		y = z;
-		arr.push(y);
+		c = a + b;
+		a = b;
+		b = c;
+		arr.push(c);
 	}
 	return arr;
 }
 
-console.log(fibs(27));
+console.log(fibs(8));
