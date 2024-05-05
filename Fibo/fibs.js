@@ -22,4 +22,4 @@ function fibs(n) {
 	return arr;
 }
 
-console.log(fibs(8));
+console.log(fibs(15));
